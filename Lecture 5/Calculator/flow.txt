@@ -1,0 +1,30 @@
+
+
+Flow of project code :
+
+
+app -> import http 
+    -> import cal.js(requestHandler) into --> requestHandler 
+    -> create server , port : 3001
+
+cal -> import sum.js(sumRequestHandler) into --> sumRequestHandler
+    -> create module -> requestHandler
+    -> log .url and .method
+    -> create routing for '/' 
+        : as to give welcome and show link to '/calculator'
+    -> create routing for '/calculator'
+        : as to get 2 nums with form with POST method and action --> '/calculator-result'
+    -> create routing for '/calculator-result and Method = POST'
+        : call module sumRequestHandler
+    -> exports itself as module (requestHandler)
+
+sum -> create module sumRequestHandler
+    -> log .url
+    -> create body array to save chunk 
+    -> for data : push chunk to body
+    -> for end : fullbody <-- use buffer -> concat -> body -> toString()
+               : params <-- use param -> URLSearchparams -> fullbody
+               : bodyObject <-- use Object (Entries) -> params
+               : result <-- paserInt[ num1 + num2 ]
+               : log result
+    -> exports itself (sumRequestHandler)
