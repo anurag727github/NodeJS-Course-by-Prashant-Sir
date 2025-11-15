@@ -37,3 +37,6 @@ git restore <file>
 
 # Remove accidentally added node_modules
 git rm -r --cached node_modules
+
+# Everytime you edit the package.json directly so it need to run command as :
+npm install
