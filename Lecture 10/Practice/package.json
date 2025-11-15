@@ -1,0 +1,29 @@
+{
+  "name": "newfolder",
+  "version": "1.0.0",
+  "description": "This porject is being created to learn about npm",
+  "keywords": [],
+  "homepage": "https://github.com/anurag727github/NodeJS-Course-by-Prashant-Sir#readme",
+  "bugs": {
+    "url": "https://github.com/anurag727github/NodeJS-Course-by-Prashant-Sir/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anurag727github/NodeJS-Course-by-Prashant-Sir.git"
+  },
+  "license": "ISC",
+  "author": "Anurag",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "naruto": "node app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
