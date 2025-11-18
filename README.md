@@ -1,7 +1,7 @@
 # NodeJS-Course-by-Prashant-Sir
 Complete NodeJS Learning with certification and fully implementation of projects created using nodeJS
 
-some git commands so that can help you to push code to git :
+# some git commands so that can help you to push code to git :
 
 # Initialize npm project
 npm init
