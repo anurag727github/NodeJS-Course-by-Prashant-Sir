@@ -61,3 +61,8 @@ npx @tailwindcss/cli -i ./public/input.css -o ./public/output.css --watch
 # 🎨 4. Use output.css in your HTML
 In your HTML files:
 <link rel="stylesheet" href="/output.css">
+
+# for script named other tah "start" need to run as follows :
+npm run tailwind
+npm run naruto
+npm run test

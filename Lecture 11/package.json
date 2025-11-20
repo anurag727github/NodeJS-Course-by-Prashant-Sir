@@ -18,17 +18,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
-    "naruto": "node app.js"
+    "naruto": "node app.js",
+    "tailwind": "npx @tailwindcss/cli -i ./public/input.css -o ./public/output.css --watch"
   },
   "dependencies": {
     "body-parser": "^2.2.0",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
-    "@tailwindcss/cli": "^4.1.17",
-    "autoprefixer": "^10.4.22",
-    "nodemon": "^3.1.11",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.17"
+    "nodemon": "^3.1.11"
   }
 }
