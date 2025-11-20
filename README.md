@@ -40,3 +40,24 @@ git rm -r --cached node_modules
 
 # Everytime you edit the package.json directly so it need to run command as :
 npm install
+
+# 📦 1. Install Required Packages
+npm install -D tailwindcss @tailwindcss/cli postcss autoprefixer
+
+# 📁 2. Create the Tailwind Input File
+public/input.css
+
+Add the following:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom CSS below */
+
+# 🛠 3. Build Tailwind (Generate output.css)
+npx @tailwindcss/cli -i ./public/input.css -o ./public/output.css --watch
+
+# 🎨 4. Use output.css in your HTML
+In your HTML files:
+<link rel="stylesheet" href="/output.css">
