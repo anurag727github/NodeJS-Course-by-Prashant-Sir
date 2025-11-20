@@ -41,25 +41,28 @@ git rm -r --cached node_modules
 # Everytime you edit the package.json directly so it need to run command as :
 npm install
 
-# 📦 1. Install Required Packages
-npm install -D tailwindcss @tailwindcss/cli 
+# 📦 1. Install Tailwind CLI (v4)
+npm install -D @tailwindcss/cli
 
-# 📁 2. Create the Tailwind Input File
+# 📁 2. Create Tailwind input file
 public/input.css
 
-Add the following:
-
+Add inside:
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 /* Your custom CSS below */
 
 # 🛠 3. Build Tailwind (Generate output.css)
 npx @tailwindcss/cli -i ./public/input.css -o ./public/output.css --watch
 
-# 🎨 4. Use output.css in your HTML
-In your HTML files:
+# 🖥 4. Add script in package.json
+"tailwind": "npx @tailwindcss/cli -i ./public/input.css -o ./public/output.css --watch"
+
+# ▶️ 5. Run Tailwind
+npm run tailwind
+
+# 🎨 6. Use output.css in your HTML
 <link rel="stylesheet" href="/output.css">
 
 # for script named other tah "start" need to run as follows :
