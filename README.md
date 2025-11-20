@@ -42,7 +42,7 @@ git rm -r --cached node_modules
 npm install
 
 # 📦 1. Install Required Packages
-npm install -D tailwindcss @tailwindcss/cli postcss autoprefixer
+npm install -D tailwindcss @tailwindcss/cli 
 
 # 📁 2. Create the Tailwind Input File
 public/input.css
