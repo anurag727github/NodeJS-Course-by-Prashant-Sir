@@ -65,7 +65,7 @@ npm run tailwind
 # 🎨 6. Use output.css in your HTML
 <link rel="stylesheet" href="/output.css">
 
-# for script named other tah "start" need to run as follows :
+# for script named other than "start" need to run as follows :
 npm run tailwind
 npm run naruto
 npm run test
